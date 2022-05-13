@@ -1,7 +1,12 @@
+import { AgendarModule } from './agendar/agendar.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: ' ', pathMatch: 'full', redirectTo:'Agendar' },
+  {path: 'agendar',
+  loadChildren: () => import('./agendar/agendar.module').then(m => m.AgendarModule)}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
