@@ -1,10 +1,11 @@
-import { AgendarModule } from './agendar.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AgendarComponent } from './agendar/agendar.component';
+
 const routes: Routes = [
   {
-    path: ' ', component: AgendarModule
+    path: ' ', component: AgendarComponent
   }
 ];
 

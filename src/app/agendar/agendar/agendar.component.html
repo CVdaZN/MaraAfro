@@ -1,2 +1,19 @@
-<p>agendar works!</p>
+
+<table mat-table [dataSource]="agendar" class="mat-elevation-z8">
+
+  <!-- nome Column -->
+  <ng-container matColumnDef="nome">
+    <th mat-header-cell *matHeaderCellDef> nome </th>
+    <td mat-cell *matCellDef="let Agendar"> {{ Agendar.nome }} </td>
+  </ng-container>
+
+  <!-- Serviços Column -->
+  <ng-container matColumnDef="servicos">
+    <th mat-header-cell *matHeaderCellDef> serviços </th>
+    <td mat-cell *matCellDef="let Agendar"> {{ Agendar.servicos }} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
 

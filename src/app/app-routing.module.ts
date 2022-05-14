@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path: ' ', pathMatch: 'full', redirectTo:'Agendar' },
-  {path: 'agendar',
+  {path: 'Agendar',
   loadChildren: () => import('./agendar/agendar.module').then(m => m.AgendarModule)}
   ];
 
