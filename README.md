@@ -16,7 +16,7 @@ Uma Aplicação Web com a finalidade de promover serviços de Estetica e Beleza,
 <h3>
 📁 Acesso ao projeto
 <h3>
-Veja mais acessando o link a baixo:
+Veja mais:
 https://boiling-beach-19473.herokuapp.com/
 
 <h3>
